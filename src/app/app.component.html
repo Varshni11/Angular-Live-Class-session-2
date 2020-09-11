@@ -1,0 +1,30 @@
+<p>Hello</p>
+<p>{{name}}</p>
+<h2>{{number}}</h2>
+
+<div>
+  <span *ngIf="isavail; then condition1 else condition2">Some Text is Appearing</span>
+  <ng-template #condition1>Some Text is Appearing</ng-template>
+  <ng-template #condition2>Some Text is Different</ng-template>
+  
+</div>
+
+<div>
+   <p>List of Week:</p>
+<select>
+ 
+  <option *ngFor="let i of week">{{i}}</option>
+</select>
+
+</div>
+
+<div>
+  <p [ngStyle]="{backgroundColor:}">The Id of customer id is {{customerid}},his Status is {{customerStatus}}</p>
+  </div>
+
+<app-header></app-header>
+<app-timer></app-timer>
+<app-footer></app-footer>
+<app-search></app-search>
+<app-helper></app-helper>
+<!--view-->
