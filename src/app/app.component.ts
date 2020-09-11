@@ -24,6 +24,6 @@ export class AppComponent  {
     return this.customerStatus;
   }
   getmethecolor(){
-    
+    ;
   }
 }
